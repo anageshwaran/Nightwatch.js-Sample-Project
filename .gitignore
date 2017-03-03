@@ -1,0 +1,9 @@
+/.idea/
+/nightwatch/
+/npm/
+reports/*.html
+reports/*.json
+reports/*.xml
+*.log
+/lib/
+/node_modules/

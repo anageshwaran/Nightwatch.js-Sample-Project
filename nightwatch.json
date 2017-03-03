@@ -1,0 +1,57 @@
+{
+  "src_folders" : ["tests"],
+  "output_folder" : "reports",
+  "custom_commands_path" : "",
+  "page_objects_path" : "page_objects",
+  "custom_assertions_path" : "",
+  "globals_path" : "",
+  "live_output" : false,
+  "parallel_process_delay" : 10,
+  "disable_colors": false,
+  "test_workers" : false,
+
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "selenium/selenium.jar",
+    "log_path" : "log",
+    "host" : "127.0.0.1",
+    "port" : 5555,
+    "cli_args" : {
+      "webdriver.chrome.driver" : "bin/chromedriver.exe",
+      "webdriver.ie.driver" : "",
+      "webdriver.gecko.driver" : "bin/geckodriver.exe",
+      "webdriver.firefox.profile" : ""
+    }
+  },
+
+  "test_settings" : {
+    "default" : {
+      "launch_url" : "http://localhost",
+      "selenium_host" : "127.0.0.1",
+      "selenium_port" : 5555,
+      "silent" : true,
+      "disable_colors": false,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      },
+      "desiredCapabilities" : {
+        "browserName" : "chrome",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true
+      }
+    },
+
+
+
+    "phantomjs" : {
+      "desiredCapabilities" : {
+        "browserName" : "phantomjs",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true,
+        "phantomjs.binary.path" : "/path/to/phantomjs"
+      }
+    }
+
+    }
+  }
